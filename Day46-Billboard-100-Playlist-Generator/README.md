@@ -37,7 +37,7 @@ https://appbrewery.github.io/bakeboard-hot-100/
 ### 1. Clone the repository
 
 ```bash
-git clone <your-repo-url>
+git clone github.com/AdityaBhere/100-days-of-python/tree/master/Day46-Billboard-100-Playlist-Generator
 ```
 
 ### 2. Install dependencies
