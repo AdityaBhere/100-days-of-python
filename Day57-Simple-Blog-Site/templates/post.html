@@ -13,14 +13,9 @@
            </div>
         <div class="content">
             <div class="card">
-                {% for post in all_posts %}
-                    {% if post.index == post_id %}
-                        <h2>{{ post.title }}</h2>
-                        <p>{{ post.body }}</p>
-                    {% endif %}
-                {% endfor %}
+                <h2>{{ post.title }}</h2>
+                <p>{{ post.body }}</p>
             </div>
-
     </div>
 </div>
 </body>

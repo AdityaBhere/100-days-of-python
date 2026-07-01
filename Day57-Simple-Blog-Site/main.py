@@ -19,9 +19,13 @@ app = Flask(__name__)
 def home():
     return render_template("index.html", all_posts=all_posts_list)
 
-@app.route("/post/<int:index>")
+@app.route("/post_object/<int:index>")
 def post(index):
-    return render_template("post.html", post_id=index, all_posts=all_posts_list)
+    searched_post = None
+    for post_object in all_posts_list:
+        if post_object.index == index:
+            searched_post = post_object
+    return render_template("post.html", post=searched_post)
 
 
 if __name__ == "__main__":
