@@ -19,7 +19,7 @@ app = Flask(__name__)
 def home():
     return render_template("index.html", all_posts=all_posts_list)
 
-@app.route("/post_object/<int:index>")
+@app.route("/post/<int:index>")
 def post(index):
     searched_post = None
     for post_object in all_posts_list:
